@@ -90,6 +90,7 @@ button {
 
 .section {
   padding-block: 3rem;
+  text-align: center;
 }
 
 .flow > * + * {
@@ -257,6 +258,39 @@ button {
   display: block;
 }
 
+.bubble {
+  display: block;
+  padding: 1rem;
+  max-width: 18.75rem;
+  min-height: 15.625rem;
+  background: url("../assets/img/icons/bubble1.svg") 0 0/contain no-repeat;
+  position: relative;
+}
+.bubble--reverse {
+  background: url("../assets/img/icons/bubble2.svg") 0 0/contain no-repeat;
+}
+.bubble--reverse > .bubble__avatar {
+  margin-inline-start: -2rem;
+}
+.bubble--reverse-desktop {
+  background: url("../assets/img/icons/bubble2.svg") 0 0/contain no-repeat;
+}
+.bubble--reverse-desktop > .bubble__avatar {
+  display: block;
+  margin-inline-start: 0;
+  transform: rotateY(180deg);
+}
+.bubble__num {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Balsamiq Sans", cursive;
+}
+.bubble__avatar {
+  margin-inline-start: auto;
+  margin-block-start: 3rem;
+}
+
 @media screen and (min-width: 620px) {
   .hero {
     background: url("../assets/img/hero/banner-desktop.svg") no-repeat 50% 0/cover;
@@ -408,4 +442,23 @@ button {
 .story__img {
   width: 100%;
   object-fit: cover;
+}
+
+.buy__logo {
+  margin-inline: auto;
+  width: 80px;
+  margin-block-end: 2rem;
+}
+.buy__steps {
+  margin-block-start: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .buy__steps {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 }
