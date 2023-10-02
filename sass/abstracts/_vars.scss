@@ -1,0 +1,55 @@
+@use './functions' as f;
+
+
+$primary-bg: rgb(20, 20, 20);
+$primary-font-color: rgb(228, 231, 231);
+$secondary-font-color: rgb(20, 20, 20);
+
+$font-primary: "Work Sans", sans-serif;
+
+$screen-xs-max: 360px;
+$screen-sm-max: 480px;
+$screen-md-max: 620px;
+$screen-lg-max: 1024px;
+$screen-xl-max: 1600px;
+
+$max-width: f.toRem(1220);
+$page-padding: 2rem;
+
+//bp
+$bp-phone: f.toRem($screen-sm-max);
+$bp-tablet: f.toRem($screen-md-max);
+$bp-desktop: f.toRem($screen-lg-max);
+
+// Transitions
+$duration: 300ms;
+$timing: ease-in-out;
+
+// Burger
+$clr-burger-line: #000;
+$burger-size: f.toRem(30);
+$burger-line-height: 3px;
+$burger-line-gap: $burger-line-height;
+
+// Form
+
+// Form group
+$form-group-mb: 1em;
+
+// Form control
+$input-padding-x: f.toRem(10);
+$input-padding-y: f.toRem(10);
+$input-bg: transparent;
+$input-border: 2px solid #cacaca;
+$input-fz: 1rem;
+$input-text-color: #000;
+$input-border-radius: 8px;
+
+$input-focus-border-color: #007bff;
+$input-focus-bg: transparent;
+$input-focus-color: #007bff;
+
+// Form label
+$label-fz: 1rem;
+$label-color: #000;
+$label-mb: .5em;

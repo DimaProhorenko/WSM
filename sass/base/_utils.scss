@@ -1,0 +1,11 @@
+@use '../abstracts/' as abs;
+
+.container {
+    padding-inline: abs.$page-padding;
+    max-width: abs.$max-width;
+    margin-inline: auto;
+}
+
+.flow>*+* {
+    margin-block-start: 1rem;
+}

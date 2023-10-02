@@ -1,0 +1,14 @@
+@use '../abstracts/' as abs;
+
+.sm {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+
+    &__li {}
+
+    &__img {
+        width: abs.toRem(45);
+    }
+}

@@ -1,0 +1,22 @@
+@use '../abstracts/' as abs;
+
+.btn {
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    display: inline-block;
+    padding: .75rem 1rem;
+    text-decoration: none;
+    font-size: abs.toRem(14);
+    font-weight: 500;
+    line-height: 1;
+
+    &--primary {
+        background-color: abs.$primary-bg;
+        color: abs.$primary-font-color;
+    }
+
+    &--block {
+        display: block;
+    }
+}

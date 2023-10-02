@@ -1,0 +1,50 @@
+@use '../abstracts/' as abs;
+
+.hero {
+    &__content {
+        padding-block-start: 6rem;
+
+        &-img {
+            width: 80%;
+            max-width: 30rem;
+            margin-inline: auto;
+            margin-block-end: 1.5rem;
+        }
+    }
+
+    &__sm {
+        margin-block-end: 2rem;
+    }
+
+    &__box {
+        border: 3px solid black;
+        border-radius: .8rem;
+        text-align: center;
+
+        &>div {
+            padding: 2rem;
+        }
+    }
+
+    &__upper {
+        background-color: abs.$primary-bg;
+        color: abs.$primary-font-color;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+    }
+
+    &__subtitle {
+        overflow-wrap: break-word;
+        font-size: 1.1rem;
+    }
+
+    &__click-here {
+        display: block;
+
+        &:visited {
+            color: inherit;
+        }
+    }
+}
