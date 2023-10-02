@@ -1,0 +1,41 @@
+@use '../abstracts/' as abs;
+
+.meme {
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    &__img {
+        max-width: abs.toRem(300);
+    }
+
+    &__left,
+    &__right {
+        display: none;
+
+        @include abs.for-tablet-up {
+            display: block;
+        }
+    }
+
+    &__followers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1rem;
+        text-align: center;
+        max-width: abs.toRem(400);
+        margin-inline: auto;
+        position: relative;
+    }
+
+    &__text {
+        font-size: .8rem;
+        max-width: abs.toRem(100);
+        margin-inline: auto;
+    }
+}

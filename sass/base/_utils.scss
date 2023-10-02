@@ -4,8 +4,44 @@
     padding-inline: abs.$page-padding;
     max-width: abs.$max-width;
     margin-inline: auto;
+    overflow: hidden;
+}
+
+.section {
+    padding-block: 3rem;
 }
 
 .flow>*+* {
     margin-block-start: 1rem;
+}
+
+.text {
+    &-center {
+        text-align: center;
+    }
+
+    &-upper {
+        text-transform: uppercase;
+    }
+}
+
+.title {
+    font-size: abs.toRem(35);
+    font-family: abs.$font-secondary;
+    margin-block-end: .7em;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    @include abs.for-tablet-up {
+        font-size: abs.toRem(48);
+    }
+
+
+    &--sm {
+        font-size: abs.toRem(40);
+
+        @include abs.for-tablet-up {
+            font-size: abs.toRem(25)
+        }
+    }
 }

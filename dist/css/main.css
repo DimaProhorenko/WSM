@@ -85,10 +85,43 @@ button {
   padding-inline: 2rem;
   max-width: 76.25rem;
   margin-inline: auto;
+  overflow: hidden;
+}
+
+.section {
+  padding-block: 3rem;
 }
 
 .flow > * + * {
   margin-block-start: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-upper {
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 2.1875rem;
+  font-family: "Balsamiq Sans", cursive;
+  margin-block-end: 0.7em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+@media screen and (min-width: 620px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+.title--sm {
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 620px) {
+  .title--sm {
+    font-size: 1.5625rem;
+  }
 }
 
 .burger {
@@ -261,4 +294,37 @@ button {
   .hero__img {
     display: none;
   }
+}
+
+.meme__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.meme__img {
+  max-width: 18.75rem;
+}
+.meme__left, .meme__right {
+  display: none;
+}
+@media screen and (min-width: 620px) {
+  .meme__left, .meme__right {
+    display: block;
+  }
+}
+.meme__followers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  text-align: center;
+  max-width: 25rem;
+  margin-inline: auto;
+  position: relative;
+}
+.meme__text {
+  font-size: 0.8rem;
+  max-width: 6.25rem;
+  margin-inline: auto;
 }
