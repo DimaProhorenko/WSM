@@ -1,0 +1,13 @@
+@use '../abstracts/' as abs;
+
+.elon {
+    text-align: center;
+
+    &__img {
+        margin-block-end: 2rem;
+
+        img {
+            margin-inline: auto;
+        }
+    }
+}

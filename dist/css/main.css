@@ -124,6 +124,12 @@ button {
   }
 }
 
+.subtitle {
+  font-size: 1.1rem;
+  max-width: 50rem;
+  margin-inline: auto;
+}
+
 .burger {
   display: block;
   width: 1.875rem;
@@ -326,5 +332,15 @@ button {
 .meme__text {
   font-size: 0.8rem;
   max-width: 6.25rem;
+  margin-inline: auto;
+}
+
+.elon {
+  text-align: center;
+}
+.elon__img {
+  margin-block-end: 2rem;
+}
+.elon__img img {
   margin-inline: auto;
 }
