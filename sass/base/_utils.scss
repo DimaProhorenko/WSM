@@ -15,6 +15,13 @@
     margin-block-start: 1rem;
 }
 
+.line {
+    max-width: abs.toRem(300);
+    height: 1px;
+    margin-inline: auto;
+    background-color: abs.$secondary-bg;
+}
+
 .text {
     &-center {
         text-align: center;

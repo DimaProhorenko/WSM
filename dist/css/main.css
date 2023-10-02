@@ -96,6 +96,13 @@ button {
   margin-block-start: 1rem;
 }
 
+.line {
+  max-width: 18.75rem;
+  height: 1px;
+  margin-inline: auto;
+  background-color: #717D85;
+}
+
 .text-center {
   text-align: center;
 }
@@ -371,4 +378,34 @@ button {
   min-height: 300px;
   max-height: 600px;
   margin-inline: auto;
+}
+
+.story__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .story__content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+.story__logo {
+  margin-inline: auto;
+}
+.story__left {
+  max-width: 620px;
+}
+.story__right {
+  width: 100%;
+  max-width: 28.75rem;
+}
+.story__img {
+  width: 100%;
+  object-fit: cover;
 }

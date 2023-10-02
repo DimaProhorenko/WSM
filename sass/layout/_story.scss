@@ -1,0 +1,37 @@
+@use '../abstracts/' as abs;
+
+.story {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+
+
+        @include abs.for-desktop-up {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            text-align: left;
+        }
+    }
+
+    &__logo {
+        margin-inline: auto;
+    }
+
+    &__left {
+        max-width: abs.$screen-md-max;
+    }
+
+    &__right {
+        width: 100%;
+        max-width: abs.toRem(460);
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
