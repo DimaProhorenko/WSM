@@ -1,0 +1,28 @@
+@use '../abstracts/' as abs;
+
+.memes {
+
+    &__wrapper {
+        padding-block-end: 2rem;
+        padding-inline: 2rem;
+
+        .swiper-pagination-bullet-active {
+            background: abs.$primary-bg !important;
+        }
+    }
+
+    &__slide {
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    &__pagination {
+        bottom: 0 !important;
+    }
+
+    &__img {
+        min-height: 300px;
+        max-height: 600px;
+        margin-inline: auto;
+    }
+}

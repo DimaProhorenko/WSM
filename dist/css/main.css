@@ -130,6 +130,14 @@ button {
   margin-inline: auto;
 }
 
+.shadow {
+  box-shadow: 8px 9px #bfbfbf;
+}
+
+.border {
+  border: 2px solid #000;
+}
+
 .burger {
   display: block;
   width: 1.875rem;
@@ -342,5 +350,25 @@ button {
   margin-block-end: 2rem;
 }
 .elon__img img {
+  margin-inline: auto;
+}
+
+.memes__wrapper {
+  padding-block-end: 2rem;
+  padding-inline: 2rem;
+}
+.memes__wrapper .swiper-pagination-bullet-active {
+  background: rgb(20, 20, 20) !important;
+}
+.memes__slide {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.memes__pagination {
+  bottom: 0 !important;
+}
+.memes__img {
+  min-height: 300px;
+  max-height: 600px;
   margin-inline: auto;
 }

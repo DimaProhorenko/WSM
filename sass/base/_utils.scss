@@ -51,3 +51,11 @@
     max-width: abs.toRem(800);
     margin-inline: auto;
 }
+
+.shadow {
+    box-shadow: 8px 9px abs.$shadow-color;
+}
+
+.border {
+    border: 2px solid #000;
+}
