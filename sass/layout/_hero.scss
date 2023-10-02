@@ -1,8 +1,19 @@
 @use '../abstracts/' as abs;
 
 .hero {
+    @include abs.for-tablet-up {
+        background: url('../assets/img/hero/banner-desktop.svg') no-repeat 50% 0 / cover;
+        min-height: 135vh;
+    }
+
+    @include abs.for-desktop-up {
+        min-height: abs.toRem(1500);
+    }
+
     &__content {
         padding-block-start: 6rem;
+        max-width: 400px;
+        margin-inline: auto;
 
         &-img {
             width: 80%;
@@ -42,9 +53,18 @@
 
     &__click-here {
         display: block;
+        color: abs.$secondary-font-color;
 
         &:visited {
             color: inherit;
+        }
+    }
+
+    &__img {
+        margin-block-start: .5rem;
+
+        @include abs.for-tablet-up {
+            display: none;
         }
     }
 }

@@ -203,8 +203,21 @@ button {
   display: block;
 }
 
+@media screen and (min-width: 620px) {
+  .hero {
+    background: url("../assets/img/hero/banner-desktop.svg") no-repeat 50% 0/cover;
+    min-height: 135vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    min-height: 93.75rem;
+  }
+}
 .hero__content {
   padding-block-start: 6rem;
+  max-width: 400px;
+  margin-inline: auto;
 }
 .hero__content-img {
   width: 80%;
@@ -236,7 +249,16 @@ button {
 }
 .hero__click-here {
   display: block;
+  color: rgb(20, 20, 20);
 }
 .hero__click-here:visited {
   color: inherit;
+}
+.hero__img {
+  margin-block-start: 0.5rem;
+}
+@media screen and (min-width: 620px) {
+  .hero__img {
+    display: none;
+  }
 }
