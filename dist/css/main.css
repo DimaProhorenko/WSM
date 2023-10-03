@@ -8,7 +8,7 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role=list],
+ul,
 ol[role=list] {
   list-style: none;
 }
@@ -40,9 +40,13 @@ h6 {
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
-
-a:hover {
+a:not([class]):hover {
   text-decoration: underline;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -81,6 +85,17 @@ button {
     scroll-behavior: auto !important;
   }
 }
+@media screen and (max-width: 620px) {
+  .hide--mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hide--desktop {
+    display: none !important;
+  }
+}
+
 .container {
   padding-inline: 2rem;
   max-width: 76.25rem;
@@ -296,6 +311,66 @@ button {
   margin-block-start: 3rem;
 }
 
+.logo {
+  max-width: 2.5rem;
+}
+
+.nav {
+  position: fixed;
+  top: 4.75rem;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  padding-block: 0.25rem;
+  padding-inline: 0.75rem;
+  border-radius: 0 0 0 2rem;
+  translate: 100% 0;
+  transition: translate 300ms ease-in-out;
+}
+@media screen and (min-width: 1024px) {
+  .nav {
+    all: unset;
+  }
+}
+.nav--open {
+  translate: 0;
+}
+@media screen and (min-width: 1024px) {
+  .nav__list {
+    display: flex;
+    gap: 1rem;
+  }
+}
+.nav__link {
+  display: inline-block;
+  padding: 0.15rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: relative;
+}
+@media screen and (min-width: 1024px) {
+  .nav__link {
+    font-size: 1.2rem;
+  }
+}
+.nav__link::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(20, 20, 20);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform ease-in-out 300ms;
+}
+.nav__link:hover::before, .nav__link[aria-current=page] {
+  transform: scaleX(1);
+}
+
 @media screen and (min-width: 620px) {
   .hero {
     background: url("../assets/img/hero/banner-desktop.svg") no-repeat 50% 0/cover;
@@ -469,4 +544,23 @@ button {
 }
 .buy__btn {
   margin-block-end: 1rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 1000;
+}
+.header__content {
+  height: 4.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__cta {
+  font-weight: 600;
+  font-size: 1.2rem;
 }

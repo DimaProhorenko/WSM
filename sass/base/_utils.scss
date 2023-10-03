@@ -1,5 +1,19 @@
 @use '../abstracts/' as abs;
 
+.hide {
+    &--mobile {
+        @media screen and (max-width: abs.$screen-md-max) {
+            display: none;
+        }
+    }
+
+    &--desktop {
+        @include abs.for-desktop-up {
+            display: none !important;
+        }
+    }
+}
+
 .container {
     padding-inline: abs.$page-padding;
     max-width: abs.$max-width;

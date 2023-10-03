@@ -1,0 +1,23 @@
+@use '../abstracts/' as abs;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: abs.$header-bg;
+    z-index: 1000;
+
+    &__content {
+        height: abs.$header-height;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    &__cta {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+}
