@@ -1,0 +1,13 @@
+@use '../abstracts/' as abs;
+
+.footer {
+    text-align: center;
+    padding-block-start: 6rem;
+
+    &__copy {
+        color: abs.$primary-font-color;
+        background-color: abs.$primary-bg;
+        padding: .5rem;
+
+    }
+}

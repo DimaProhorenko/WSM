@@ -622,3 +622,13 @@ button {
   min-width: 350px;
   max-width: 380px;
 }
+
+.footer {
+  text-align: center;
+  padding-block-start: 6rem;
+}
+.footer__copy {
+  color: rgb(228, 231, 231);
+  background-color: rgb(20, 20, 20);
+  padding: 0.5rem;
+}
