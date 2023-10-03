@@ -1,0 +1,25 @@
+@use '../abstracts/' as abs;
+
+.card {
+    padding: 2rem;
+    box-shadow: 8px 9px abs.$shadow-color;
+    border: 2px solid black;
+    border-radius: 2rem;
+
+    &__header {
+        margin-block-end: 1rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        margin-block-end: .5em;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__subtitle {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}

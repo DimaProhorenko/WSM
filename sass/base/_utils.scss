@@ -18,11 +18,10 @@
     padding-inline: abs.$page-padding;
     max-width: abs.$max-width;
     margin-inline: auto;
-    overflow: hidden;
 }
 
 .section {
-    padding-block: 3rem;
+    padding-block: 2rem;
     text-align: center;
 }
 
@@ -70,8 +69,11 @@
 
 .subtitle {
     font-size: 1.1rem;
+    font-weight: 600;
     max-width: abs.toRem(800);
     margin-inline: auto;
+
+    @include abs.for-desktop-up {}
 }
 
 .shadow {
@@ -80,4 +82,10 @@
 
 .border {
     border: 2px solid #000;
+}
+
+.img-center {
+    &>img {
+        margin-inline: auto;
+    }
 }

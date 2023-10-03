@@ -13,11 +13,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include abs.for-desktop-up {
+            &>* {
+                flex: 1;
+            }
+        }
     }
 
 
     &__cta {
         font-weight: 600;
         font-size: 1.2rem;
+        display: block;
+        max-width: 150px;
+        text-align: center;
+        margin-inline-start: auto;
     }
 }

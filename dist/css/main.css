@@ -97,14 +97,13 @@ button {
 }
 
 .container {
-  padding-inline: 2rem;
+  padding-inline: 1rem;
   max-width: 76.25rem;
   margin-inline: auto;
-  overflow: hidden;
 }
 
 .section {
-  padding-block: 3rem;
+  padding-block: 2rem;
   text-align: center;
 }
 
@@ -149,16 +148,20 @@ button {
 
 .subtitle {
   font-size: 1.1rem;
+  font-weight: 600;
   max-width: 50rem;
   margin-inline: auto;
 }
-
 .shadow {
   box-shadow: 8px 9px #bfbfbf;
 }
 
 .border {
   border: 2px solid #000;
+}
+
+.img-center > img {
+  margin-inline: auto;
 }
 
 .burger {
@@ -265,6 +268,10 @@ button {
   font-weight: 600;
   line-height: 1;
   box-shadow: 4px 4px #bfbfbf;
+  transition: filter 250ms ease-in-out;
+}
+.btn:hover {
+  filter: invert(1);
 }
 .btn--xl {
   font-size: 1rem;
@@ -346,12 +353,13 @@ button {
   padding: 0.15rem;
   text-transform: capitalize;
   font-size: 1.5rem;
+  font-weight: 700;
   text-decoration: none;
   position: relative;
 }
 @media screen and (min-width: 1024px) {
   .nav__link {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 .nav__link::before {
@@ -371,6 +379,27 @@ button {
   transform: scaleX(1);
 }
 
+.card {
+  padding: 2rem;
+  box-shadow: 8px 9px #bfbfbf;
+  border: 2px solid black;
+  border-radius: 2rem;
+}
+.card__header {
+  margin-block-end: 1rem;
+}
+.card__title {
+  font-size: 1.5rem;
+  margin-block-end: 0.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.card__subtitle {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 620px) {
   .hero {
     background: url("../assets/img/hero/banner-desktop.svg") no-repeat 50% 0/cover;
@@ -383,8 +412,8 @@ button {
   }
 }
 .hero__content {
-  padding-block-start: 6rem;
-  max-width: 400px;
+  padding-block-start: 4.75rem;
+  max-width: 500px;
   margin-inline: auto;
 }
 .hero__content-img {
@@ -429,6 +458,9 @@ button {
   .hero__img {
     display: none;
   }
+}
+.hero__img img {
+  width: 100%;
 }
 
 .meme__content {
@@ -560,7 +592,33 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 1024px) {
+  .header__content > * {
+    flex: 1;
+  }
+}
 .header__cta {
   font-weight: 600;
   font-size: 1.2rem;
+  display: block;
+  max-width: 150px;
+  text-align: center;
+  margin-inline-start: auto;
+}
+
+.roadmap__img {
+  margin-block-start: 4rem;
+}
+.roadmap__cards {
+  text-align: left;
+  margin-block-start: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.roadmap__cards > * {
+  flex: 1;
+  min-width: 350px;
+  max-width: 380px;
 }

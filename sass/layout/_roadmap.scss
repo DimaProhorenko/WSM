@@ -1,0 +1,23 @@
+@use '../abstracts/' as abs;
+
+.roadmap {
+    &__img {
+        margin-block-start: 4rem;
+    }
+
+    &__cards {
+        text-align: left;
+        margin-block-start: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+
+        &>* {
+            flex: 1;
+            min-width: 350px;
+            max-width: 380px;
+        }
+
+    }
+}

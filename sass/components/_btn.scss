@@ -11,6 +11,11 @@
     font-weight: 600;
     line-height: 1;
     box-shadow: 4px 4px abs.$shadow-color;
+    transition: filter 250ms ease-in-out;
+
+    &:hover {
+        filter: invert(1);
+    }
 
     &--xl {
         font-size: 1rem;
